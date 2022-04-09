@@ -2,8 +2,8 @@ BackEnd - VisuaStudio 2017, 2019, ( 2022)
 
 1 Fazer download do projeto e abrir o projeto na pasta CarroMeu/aspnet-core
 2 Limpar e Construir a solução
-3 executar no terminal de gerenciador de pacotes o comando no projeto MeuCarro.EntityFrameworkCore: Update-Database
-4 executar como projeto inicial o "MeuCarro.Web.Host"
+3 executar no gerenciador de pacotes o comando no projeto MeuCarro.EntityFrameworkCore: Update-Database
+4 projeto inicial o "MeuCarro.Web.Host"
 5 para testar via swagger usar o usuario "admin" e senha "123qwe"
 
 

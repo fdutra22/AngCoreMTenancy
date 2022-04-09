@@ -1,0 +1,27 @@
+<form autocomplete="off" #createProductForm="ngForm" (ngSubmit)="save()">
+    <h1 mat-dialog-title>Incluir parametro de venda</h1>
+    <mat-dialog-content>
+        <div class="row-fluid">
+            <div class="col-md-12">
+                <mat-form-field>
+                    <input matInput name="VendaMinimaPercentual" [placeholder]="'Magem Ideal' | localize" [(ngModel)]="parameter.margemIdealPercentual" required
+                           maxlength="128" />
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput name="VendaMinimaPercentual" [placeholder]="'Margem  Minima' | localize" [(ngModel)]="parameter.vendaMinimaPercentual" required
+                           maxlength="128" />
+                </mat-form-field>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <div mat-dialog-actions align="end">
+        <button mat-button type="button" [disabled]="saving" (click)="close(false)">
+            {{ "Cancel" | localize }}
+        </button>
+        <button mat-flat-button type="submit" flex="15" color="primary"
+                [disabled]="!createProductForm.form.valid || saving">
+            {{ "Save" | localize }}
+        </button>
+    </div>
+</form>
